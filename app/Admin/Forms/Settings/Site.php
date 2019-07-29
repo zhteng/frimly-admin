@@ -48,7 +48,7 @@ class Site extends Form
     public function data()
     {
         return [
-            'name'       => 'John Doe',
+            'name'       => 'Teng Doe',
             'email'      => 'John.Doe@gmail.com',
             'created_at' => now(),
         ];

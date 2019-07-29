@@ -45,6 +45,7 @@ $ php artisan serve
 ```
 DenyRoutes 修改权限验证
 
+适应GitHub错误提示，修改文件package.json :  "axios": "^0.16.2",  ====>>> "axios": ">=0.16.2",
 
 
 ```

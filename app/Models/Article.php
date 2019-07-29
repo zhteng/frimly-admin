@@ -12,7 +12,7 @@ class Article extends Model implements Sortable
 {
     use SortableTrait;
 
-    protected $table = 'demo_articles';
+    protected $table = 'articles';
 
     public $sortable = [
         'order_column_name' => 'order',

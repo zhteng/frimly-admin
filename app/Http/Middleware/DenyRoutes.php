@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Encore\Admin\Auth\Permission;
+use Encore\Admin\Facades\Admin;
 use Symfony\Component\HttpFoundation\Request;
 
 class DenyRoutes
@@ -22,7 +23,7 @@ class DenyRoutes
 
     public function handle(Request $request, \Closure $next)
     {
-    	if (Permission::check($this->disabledMethods) != true){
+    	if (!empty(Admin::user()) && Permission::check($this->disabledMethods) != true){
 			if (in_array($request->getMethod(), $this->disabledMethods)) {
 				Permission::error();
 			}

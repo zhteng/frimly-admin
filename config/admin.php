@@ -145,6 +145,7 @@ return [
     */
     'upload'  => [
 
+    	'host' => '',
         'disk' => 'admin',
 
         'directory'  => [
@@ -400,6 +401,12 @@ return [
             'config' => [
                 'uploadImgServer' => '/upload',
             ]
-        ]
+        ],
+
+		'china-distpicker' => [
+
+			// 如果要关掉这个扩展，设置为false
+			'enable' => true,
+		]
     ]
 ];

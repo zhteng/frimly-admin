@@ -35,7 +35,7 @@ class CategoryController extends AdminController
 
             $tree->branch(function ($branch) {
 
-                $src = config('admin.upload.host') . '/' . $branch['logo'] ;
+                $src = config('admin.upload.host') . '/uploads/' . $branch['logo'] ;
 
                 $logo = "<img src='$src' style='max-width:30px;max-height:30px' class='img'/>";
 

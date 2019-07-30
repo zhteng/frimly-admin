@@ -6,9 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Country extends Model
 {
-    protected $primaryKey = 'Code';
 
-    protected $keyType = 'string';
+	protected $primaryKey="Code";
+
+	public $incrementing = false;
+
+	protected $keyType="string";
 
     protected $table = 'world_country';
 
@@ -16,7 +19,7 @@ class Country extends Model
 
     public static $continents = ['Asia','Europe','North America','Africa','Oceania','Antarctica','South America'];
 
-    public function city()
+	public function city()
     {
         return $this->belongsTo(City::class, 'Capital', 'ID');
     }

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class MultipleImage extends Model
 {
-    protected $table = 'demo_multiple_images';
+    protected $table = 'multiple_images';
 
     public function getPicturesAttribute($pictures)
     {

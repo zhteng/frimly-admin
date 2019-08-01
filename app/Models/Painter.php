@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Painter extends Model
 {
-    protected $table = 'demo_painters';
+    protected $table = 'painters';
 
     public function paintings()
     {

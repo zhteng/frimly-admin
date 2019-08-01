@@ -10,7 +10,7 @@ class Post extends Model
 {
     use SoftDeletes, AdminBuilder;
 
-    protected $table = 'demo_posts';
+    protected $table = 'posts';
 
     protected $casts = [
         'extra' => 'json',
@@ -23,7 +23,7 @@ class Post extends Model
 
     public function tags()
     {
-        return $this->morphToMany(Tag::class, 'taggable', 'demo_taggables');
+        return $this->morphToMany(Tag::class, 'taggable', 'taggables');
     }
 
     public function comments()

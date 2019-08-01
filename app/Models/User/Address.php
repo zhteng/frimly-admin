@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Address extends Model
 {
-    protected $table = 'demo_user_address';
+    protected $table = 'user_address';
 
     public function user()
     {

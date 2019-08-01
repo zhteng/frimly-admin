@@ -11,7 +11,7 @@ class Document extends Model implements Sortable
 {
     use SoftDeletes, SortableTrait;
 
-    protected $table = 'demo_documents';
+    protected $table = 'documents';
 
     public $sortable = [
         'order_column_name' => 'sort',

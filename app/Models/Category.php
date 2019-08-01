@@ -10,5 +10,5 @@ class Category extends Model
 {
     use ModelTree, AdminBuilder;
 
-    protected $table = 'demo_categories';
+    protected $table = 'categories';
 }

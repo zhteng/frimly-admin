@@ -53,6 +53,8 @@ return [
     'update_succeeded'      => '更新成功！',
     'save_succeeded'        => '儲存成功！',
     'refresh_succeeded'     => '成功重新整理！',
+	'upload_succeeded'		=> '上传成功！',
+	'move_succeeded'		=> '操作成功！',
     'login_successful'      => '成功登入！',
     'choose'                => '選擇',
     'choose_file'           => '選擇檔案',

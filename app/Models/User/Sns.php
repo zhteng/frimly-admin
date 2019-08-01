@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Sns extends Model
 {
-    protected $table = 'demo_user_sns';
+    protected $table = 'user_sns';
 
     public function user()
     {

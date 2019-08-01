@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Video extends Model
 {
-    protected $table = 'demo_videos';
+    protected $table = 'videos';
 
     public function tags()
     {
-        return $this->morphToMany(Tag::class, 'taggable', 'demo_taggables');
+        return $this->morphToMany(Tag::class, 'taggable', 'taggables');
     }
 }
